@@ -37,6 +37,7 @@ public class UpgradingCorePlugin extends JavaPlugin {
         this.reloadConfig();
         final PluginManager manager = Bukkit.getPluginManager();
         manager.registerEvents(new ArrowShootAndHitListener(), this);
+        manager.registerEvents(new TridentThrowAndHitListener(), this);
         manager.registerEvents(new MobDeathListener(), this);
         manager.registerEvents(this.inventoryClickListener = new InventoryClickListener(), this);
         manager.registerEvents(new VisualChangeListener(), this);
