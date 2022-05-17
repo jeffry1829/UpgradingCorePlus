@@ -4,6 +4,7 @@ import com.github.schottky.zener.api.Zener;
 import com.github.schottky.zener.util.item.ItemStorage;
 import de.schottky.core.UpgradableRangedWeapon;
 import de.schottky.util.Timers;
+import org.bukkit.Bukkit;
 import org.bukkit.entity.*;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -34,7 +35,7 @@ public class ArrowShootAndHitListener implements Listener {
                 event.getDamager() instanceof Projectile &&
                 event.getEntity() instanceof Damageable damageable
         ) {
-            Timers.runLater(1, () -> System.out.println(damageable.getHealth()));
+            Timers.runLater(1, () -> Bukkit.getLogger().info(""+damageable.getHealth()));
         }
     }
 
