@@ -4,5 +4,10 @@
 /.idea/
 /logs/
 /dependency-reduced-pom.xml
-/libs
 *.iml
+/libs/com/github/Schottky-spi/api/*
+/libs/com/github/Schottky-spi/command/*
+/libs/com/github/Schottky-spi/config/*
+/libs/com/github/Schottky-spi/language/*
+/libs/com/github/Schottky-spi/menu/*
+/libs/com/github/Schottky-spi/util/*
