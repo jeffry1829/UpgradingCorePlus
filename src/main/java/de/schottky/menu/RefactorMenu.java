@@ -322,9 +322,15 @@ public class RefactorMenu {
         this.updateVisualsLater(slots, event.getView());
     }
 
-    public void onInventoryClose(@NotNull Inventory inventory, HumanEntity player) {
+    public void onInventoryClose(@NotNull Inventory inventory, HumanEntity hplayer) {
+        Player player = (Player) hplayer;
         Objects.doTwiceTwiceFor(inventory.getItem(itemSlot), inventory.getItem(coreSlot), item -> {
             if (item != null) player.getWorld().dropItem(player.getLocation(), item);
+//            Bukkit.getLogger().info("Player online?: " + player.isOnline());
+//            Bukkit.getLogger().info("Player location: " + player.getLocation());
+//            Bukkit.getLogger().info("itemSlot: " + inventory.getItem(itemSlot));
+//            Bukkit.getLogger().info("coreSlot: " + inventory.getItem(coreSlot));
+//            Bukkit.getLogger().info("anvilSlot: " + inventory.getItem(anvilSlot));
         });
     }
 
