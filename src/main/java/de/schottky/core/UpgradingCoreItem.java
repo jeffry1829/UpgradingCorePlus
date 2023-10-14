@@ -8,7 +8,7 @@ import de.schottky.exception.InvalidConfiguration;
 import de.schottky.expression.Modifier;
 import de.schottky.util.*;
 import net.md_5.bungee.api.ChatColor;
-import org.apache.commons.lang.StringEscapeUtils;
+import org.apache.commons.lang3.StringEscapeUtils;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemFlag;

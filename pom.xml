@@ -139,6 +139,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <dependency>
             <groupId>com.github.Schottky-spi</groupId>
             <artifactId>zener-menu</artifactId>
             <version>v0.9.9.3-SNAPSHOT</version> <!-- Local jar -->
@@ -177,7 +182,7 @@
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.17.1-R0.1-SNAPSHOT</version>
+            <version>1.20.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>

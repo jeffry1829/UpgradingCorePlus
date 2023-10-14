@@ -47,7 +47,7 @@ public class InventoryClickListener implements Listener {
     @EventHandler
     public void onPlayerInteract(@NotNull PlayerInteractEvent event) {
         if (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-            if(event.getClickedBlock() != null && !(event.getClickedBlock().getState() instanceof InventoryHolder)){
+            if(event.getClickedBlock() != null && !(event.getClickedBlock() instanceof InventoryHolder)){
                 CoreItem.fromItemStack(event.getItem()).ifPresent(item -> {
                     RefactorMenu menu = new RefactorMenu();
                     activeMenus.put(event.getPlayer().getUniqueId(), menu);
